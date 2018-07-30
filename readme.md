@@ -1,7 +1,7 @@
 # Credit Card Input form
 A Component to add credit card input to your react native application. For Android & iOS.
 
-*Forked from the original project in order to improve usability* since users often recognize the have input a wrong card number only after typing the name, to have an horizontal form extending outside the view seems to be appealing but it's useless to come back. The only way to go on the first field (card number) in the original project was to click one by one all previous fields in order to restore the scroll axis (this could have been fixed with a scrollable=true property). Furthermore it's pretty unusual to have x-axis forms on a mobile ux and users do prefer fields that are always visible. It has also been implemented a new style form following the iOS10 design.
+*Forked from the original project in order to improve usability and forked again to fixed a bug of image when the app try to load a image from card* since users often recognize the have input a wrong card number only after typing the name, to have an horizontal form extending outside the view seems to be appealing but it's useless to come back. The only way to go on the first field (card number) in the original project was to click one by one all previous fields in order to restore the scroll axis (this could have been fixed with a scrollable=true property). Furthermore it's pretty unusual to have x-axis forms on a mobile ux and users do prefer fields that are always visible. It has also been implemented a new style form following the iOS10 design.
 
 Code:
 
