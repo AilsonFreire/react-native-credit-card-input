@@ -55,7 +55,7 @@ export default class CreditCardInput extends Component {
 
     validColor: PropTypes.string,
     invalidColor: PropTypes.string,
-    placeholderColor: PropTypes.string,
+    placeholderTextColor: PropTypes.string,
 
     cardImageFront: PropTypes.number,
     cardImageBack: PropTypes.number,
@@ -85,7 +85,7 @@ export default class CreditCardInput extends Component {
 
   _inputProps = field => {
     const {
-      inputStyle, labelStyle, validColor, invalidColor, placeholderColor,
+      inputStyle, labelStyle, validColor, invalidColor, placeholderTextColor,
       placeholders, labels, values, status,
       onFocus, onChange, onBecomeEmpty, onBecomeValid,
     } = this.props;
@@ -93,7 +93,7 @@ export default class CreditCardInput extends Component {
     return {
       inputStyle: [s.input, inputStyle],
       labelStyle: [s.inputLabel, labelStyle],
-      validColor, invalidColor, placeholderColor,
+      validColor, invalidColor, placeholderTextColor,
       ref: field, field,
 
       label: labels[field],
@@ -171,5 +171,5 @@ CreditCardInput.defaultProps = {
   },
   validColor: "",
   invalidColor: "red",
-  placeholderColor: "gray",
+  placeholderTextColor: "",
 };

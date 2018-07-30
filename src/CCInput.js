@@ -32,7 +32,7 @@ export default class CCInput extends Component {
     labelStyle: Text.propTypes.style,
     validColor: PropTypes.string,
     invalidColor: PropTypes.string,
-    placeholderColor: PropTypes.string,
+    placeholderTextColor: PropTypes.string,
 
     onFocus: PropTypes.func,
     onChange: PropTypes.func,
@@ -70,7 +70,7 @@ export default class CCInput extends Component {
   render() {
     const { label, value, placeholder, status, keyboardType,
             containerStyle, inputStyle, labelStyle,
-            validColor, invalidColor, placeholderColor } = this.props;
+            validColor, invalidColor, placeholderTextColor } = this.props;
     return (
       <TouchableOpacity onPress={this.focus}
           activeOpacity={0.99}>
@@ -88,7 +88,7 @@ export default class CCInput extends Component {
                  {}),
               ]}
               underlineColorAndroid={"transparent"}
-              placeholderColor={placeholderColor}
+              placeholderTextColor={placeholderTextColor}
               placeholder={placeholder}
               value={value}
               onFocus={this._onFocus}
